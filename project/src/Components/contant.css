@@ -1,0 +1,126 @@
+.contant-container {
+  width: 64rem;
+}
+
+.contant-container .item {
+  min-height: 16rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  margin: 10px 0;
+}
+/* 
+*******
+left-item
+*******
+*/
+.contant-container .item .left-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contant-container .item .left-item .no {
+  color: #626e79;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+.contant-container .item .left-item .label {
+  height: 2.125rem;
+  width: 8.5rem;
+  background-color: #ff7724;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  color: #ffffff;
+  align-self: flex-start;
+}
+.contant-container .item .left-item img {
+  height: 6.4375rem;
+  width: 8.8125rem;
+}
+.contant-container .item .left-item h6 {
+  color: #4b5665;
+  font-size: 0.875rem;
+  text-align: center;
+}
+/* 
+*******
+mid-item
+*******
+*/
+
+.contant-container .item .mid-item {
+  color: #4b5665;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contant-container .item .mid-item .about {
+}
+.contant-container .item .mid-item .about span {
+  font-weight: 700;
+}
+.contant-container .item .mid-item h5 {
+  font-size: 0.9rem;
+}
+.contant-container .item .mid-item p {
+  padding-left: 20px;
+}
+.contant-container .item .mid-item .see-more {
+  /* font-size: 0.9rem; */
+  color: #1b88f4;
+  cursor: pointer;
+  width: 100px;
+  transition: all 0.2s linear;
+}
+.contant-container .item .mid-item .see-more:hover {
+  color: #a1c8ec;
+}
+
+/* 
+*******
+right-item
+*******
+*/
+.contant-container .item .right-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contant-container .item .right-item .rating-card {
+  height: 10rem;
+  width: 9rem;
+  background-color: #f3f9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+}
+.contant-container .item .right-item .rating-card .no {
+  color: #074786;
+  font-size: 1.7rem;
+  font-size: 0.8125rem;
+}
+.contant-container .item .right-item .rating-card p {
+  color: #074786;
+  font-size: 0.8125rem;
+}
+.contant-container .item .right-item button {
+  color: #ffffff;
+  height: 3rem;
+  width: 14rem;
+  padding: 10px 8px;
+  background-color: #1b88f4;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.contant-container .item .right-item button:hover {
+  transform: scale(1.1);
+}

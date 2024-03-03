@@ -7,16 +7,16 @@ const Headsection = () => {
           <h2>Best Website builders in the US</h2>
           <div className="info">
             <span>
-              <i class="bi bi-check-circle"></i>
+              <i className="bi bi-check-circle"></i>
               &nbsp; Last Updated
             </span>
             <span>February 22, 2020</span>
             <span>
-              <i class="bi bi-exclamation-circle"></i>
+              <i className="bi bi-exclamation-circle"></i>
               &nbsp; Advertising Disclosure
             </span>
             <span>
-              Top Relevant&nbsp;<i class="bi bi-arrow-down-circle"></i>
+              Top Relevant&nbsp;<i className="bi bi-arrow-down-circle"></i>
             </span>
           </div>
         </div>
@@ -30,13 +30,13 @@ const Headsection = () => {
         </div>
         <nav>
           <span>Home</span>
-          <i class="bi bi-chevron-right"></i>
+          <i className="bi bi-chevron-right"></i>
           <span>Hosting for all</span>
-          <i class="bi bi-chevron-right"></i>
+          <i className="bi bi-chevron-right"></i>
           <span>Hosting</span>
-          <i class="bi bi-chevron-right"></i>
+          <i className="bi bi-chevron-right"></i>
           <span>Hosting6</span>
-          <i class="bi bi-chevron-right"></i>
+          <i className="bi bi-chevron-right"></i>
           <span>Hosting5</span>
         </nav>
       </div>

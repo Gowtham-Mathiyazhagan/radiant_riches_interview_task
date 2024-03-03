@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav>
         <div className="input-group">
           <button>
-            <i class="bi bi-search"></i>
+            <i className="bi bi-search"></i>
           </button>
           <input type="text" onClick={() => setIcon(false)} />
         </div>
