@@ -1,11 +1,16 @@
 import React from "react";
-import img from "../assets/system.jpg";
-import img2 from "../assets/rating-5.jpg";
 import "./contant.css";
+import { contantData } from "./data.js";
 const Contant = () => {
   return (
     <div className="contant-container">
       {/* Splited by left, mid, right */}
+      {contantData.map((val,i)=>{
+return(
+  
+)
+
+      })}
       <div className="item">
         <div className="left-item">
           <div className="label">
@@ -22,14 +27,14 @@ const Contant = () => {
             Comprehensive Digital Platform Creation Tool, Streamlined Design
             Interface for Professional Websites and Online Stores (Black/Blue)
           </div>
-          {/* <h5>Main highlights</h5> */}
-          {/* <p>
+          <h5>Main highlights</h5>
+          <p>
             [What You Get]: Receive the WixPro website builder suite, access to
             premium design templates, an extensive library of widgets and apps,
             and detailed step-by-step guides.
-          </p> */}
-		  {/* The .cdj-details determine when it is going to show */}
-          <div className="cdk-details">
+          </p>
+          {/* The .cdj-details determine when it is going to show */}
+          {/* <div className="cdk-details">
 			<div className="percentage">26% Off</div>
             <h5>Main highlights</h5>
             <div className="cdk-rate">
@@ -57,7 +62,7 @@ const Contant = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="see-more">
             Show more&nbsp;<i className="bi bi-chevron-down"></i>
           </div>
