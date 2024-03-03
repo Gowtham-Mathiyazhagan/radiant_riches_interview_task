@@ -1,0 +1,46 @@
+.nav-container {
+  height: 4rem;
+  width: 100%;
+  background-color: #212731;
+  color: #d1d6da;
+}
+.nav-container nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.25rem;
+  font-size: 0.875rem;
+}
+.nav-container nav > span {
+  cursor: pointer;
+}
+
+.nav-container .input-group {
+  height: 2.3125rem;
+  width: 15rem;
+  position: relative;
+}
+.input-group input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e1e4e6;
+  outline: none;
+  padding-left: 40px;
+}
+.input-group input:focus {
+  border-color: #323232;
+}
+.input-group button i {
+  font-size: 20px;
+}
+.input-group button {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
