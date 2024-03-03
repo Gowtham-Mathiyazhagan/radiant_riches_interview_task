@@ -7,31 +7,22 @@ const Contant = () => {
       {/* Splited by left, mid, right */}
       {contantData.map((val,i)=>{
 return(
-  
-)
-
-      })}
-      <div className="item">
+  <div className="item">
         <div className="left-item">
           <div className="label">
-            <i className="bi bi-trophy"></i>
-            &nbsp; Best Choice
+            <i className={val.trophy}></i>
+            &nbsp; {val.label}
           </div>
-          <div className="no">1</div>
-          <img src={img} alt="" />
-          <h6>Builder 1</h6>
+          <div className="no">{val.no}</div>
+          <img src={val.system} alt="" />
+          <h6>{val.builder}</h6>
         </div>
         <div className="mid-item cdk">
           <div className="about">
-            <span>WixPro 72-Inch Responsive Website Builder</span>-
-            Comprehensive Digital Platform Creation Tool, Streamlined Design
-            Interface for Professional Websites and Online Stores (Black/Blue)
-          </div>
+            <span>{val.span}</span>{val.about}</div>
           <h5>Main highlights</h5>
           <p>
-            [What You Get]: Receive the WixPro website builder suite, access to
-            premium design templates, an extensive library of widgets and apps,
-            and detailed step-by-step guides.
+           {val.p}
           </p>
           {/* The .cdj-details determine when it is going to show */}
           {/* <div className="cdk-details">
@@ -69,13 +60,16 @@ return(
         </div>
         <div className="right-item">
           <div className="rating-card">
-            <div className="no">9.8</div>
-            <p>Exceptional</p>
-            <img src={img2} alt="" />
+            <div className="no">{val.rating_no}</div>
+            <p>{val.rating_p}</p>
+            <img src={val.img} alt={val.builder} />
           </div>
           <button>View</button>
         </div>
       </div>
+)
+
+      })}
     </div>
   );
 };
