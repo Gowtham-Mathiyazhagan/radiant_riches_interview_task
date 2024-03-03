@@ -6,6 +6,7 @@
   min-height: 16rem;
   width: 100%;
   display: grid;
+  font-size: 0.9rem;
   grid-template-columns: 25% 1fr 25%;
   margin: 10px 0;
 }
@@ -88,7 +89,7 @@ right-item
 .contant-container .item .right-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .contant-container .item .right-item .rating-card {
@@ -123,4 +124,62 @@ right-item
 }
 .contant-container .item .right-item button:hover {
   transform: scale(1.1);
+}
+
+/* 
+*******
+Mid item
+CDK Resposive Builde
+*******
+*/
+.contant-container .item .mid-item.cdk {
+  min-height: 24rem;
+}
+.contant-container .item .mid-item.cdk .cdk-details {
+  display: none;
+}
+.contant-container .item .mid-item.cdk .cdk-details .percentage {
+  background-color: #f2f4f7;
+  color: #074786;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 1px 5px;
+  margin-bottom: 8px;
+}
+.contant-container .item .mid-item.cdk .cdk-rate {
+  height: 7rem;
+  width: 31rem;
+  background-color: #fff4ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-left: 20px;
+}
+.contant-container .item .mid-item.cdk .cdk-rate div {
+  font-size: 0.8.5rem;
+  color: #4b5665;
+}
+.contant-container .item .mid-item.cdk .cdk-rate div span {
+  background-color: #ffffff;
+  color: #1b88f4;
+}
+.contant-container .item .mid-item.cdk .cdk-review h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.contant-container .item .mid-item.cdk .cdk-review .reviews {
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5px;
+  font-size: 0.9rem;
+}
+.contant-container .item .mid-item.cdk .cdk-review .reviews div > i {
+  background-color: #eaeff3;
+  color: #1b88f4;
+  border: none !important;
+  padding: 1px 3px;
+  border-radius: 2px;
 }
