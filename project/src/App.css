@@ -18,19 +18,19 @@ html {
 
 @media only screen and (max-width: 1060px) {
   html {
-    /* background-color: aqua; */
+    background-color: aqua;
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 1010px) {
   html {
-    /* background-color: rgb(225, 255, 0); */
+    background-color: rgb(225, 255, 0);
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 880px) {
   html {
-    /* background-color: rgb(21, 255, 0); */
+    background-color: rgb(21, 255, 0);
     font-size: 11px;
   }
 }

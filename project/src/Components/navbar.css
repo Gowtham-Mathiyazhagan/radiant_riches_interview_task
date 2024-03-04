@@ -51,30 +51,29 @@
   font-size: 20px;
   cursor: pointer;
   -webkit-text-stroke: 1px;
+  /* width: 30px;
+  height: 20px; */
 }
 .nav-container .mobile-list {
   position: absolute;
-  top: 30;
+  /* top: 30px; */
   right: 130px;
   height: 100px;
   width: 100px;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.7);
   display: none;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   z-index: 10;
   transition: all 0.2s linear;
+  color: #ffffff;
 }
 
 .nav-container .mobile-list div {
   cursor: pointer;
 }
 @media only screen and (max-width: 750px) {
-  html {
-    background-color: rgb(180, 179, 244);
-    /* font-size: 10px; */
-  }
   .nav-container nav > span {
     display: none;
   }
@@ -87,5 +86,17 @@
   .bi-list,
   .bi-x-lg {
     display: block;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .nav-container .mobile-list {
+    position: absolute;
+    right: 20px;
+  }
+  @media only screen and (max-width: 880px) {
+    .nav-container .mobile-list {
+      position: absolute;
+      right: 20px;
+    }
   }
 }

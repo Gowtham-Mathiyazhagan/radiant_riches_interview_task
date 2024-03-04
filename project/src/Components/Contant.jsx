@@ -7,7 +7,7 @@ const Contant = () => {
       {/* Splited by left, mid, right */}
       {contantData.map((val, i) => {
         return (
-          <div className="item">
+          <div key={i.toString()} className="item">
             <div className="left-item">
               <div className="label" style={val.label==="none" ? {display:"none"}: {display:"block"}}>
                 <i className={val.trophy}></i>
@@ -45,13 +45,13 @@ const Contant = () => {
               <h6>Why we love it</h6>
               <div className="reviews">
                 <div>
-                  <i class="bi bi-check-lg"></i>&nbsp;Documentation
+                  <i className="bi bi-check-lg"></i>&nbsp;Documentation
                 </div>
                 <div>
-                  <i class="bi bi-check-lg"></i>&nbsp;Easy Use
+                  <i className="bi bi-check-lg"></i>&nbsp;Easy Use
                 </div>
                 <div>
-                  <i class="bi bi-check-lg"></i>&nbsp;Out of box
+                  <i className="bi bi-check-lg"></i>&nbsp;Out of box
                 </div>
               </div>
             </div>

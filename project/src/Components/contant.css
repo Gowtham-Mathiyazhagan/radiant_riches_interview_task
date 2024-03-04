@@ -234,10 +234,10 @@ CDK Resposive Builde
 }
 
 @media only screen and (max-width: 610px) {
-  html {
-    background-color: #a1c8ec;
-  }
   .contant-container {
     width: 30rem;
+  }
+  .contant-container .item .mid-item.cdk .cdk-rate {
+    width: 20rem;
   }
 }
