@@ -60,3 +60,31 @@
 .head-container nav > .bi-chevron-right {
   -webkit-text-stroke: 1px;
 }
+
+@media only screen and (max-width: 750px) {
+  .head-container nav {
+    display: none;
+  }
+  .head-container {
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 610px) {
+  html {
+    font-size: 1px;
+  }
+  .head-container {
+    width: 30rem;
+  }
+  .head-container .head-and-info h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+  }
+  .head-container .head-and-info {
+    height: 4rem;
+  }
+  .head-container .head-and-info .info {
+    display: none;
+  }
+}

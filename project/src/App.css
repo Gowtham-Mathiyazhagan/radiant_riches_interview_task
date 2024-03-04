@@ -34,3 +34,8 @@ html {
     font-size: 11px;
   }
 }
+@media only screen and (max-width: 610px) {
+  html {
+    font-size: 11px;
+  }
+}
