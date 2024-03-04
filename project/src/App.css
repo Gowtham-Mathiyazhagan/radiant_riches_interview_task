@@ -9,6 +9,7 @@ html {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
+/* warpper for alginment */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -16,26 +17,24 @@ html {
   align-items: center;
 }
 
+/* responsive design */
 @media only screen and (max-width: 1060px) {
   html {
-    background-color: aqua;
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 1010px) {
   html {
-    background-color: rgb(225, 255, 0);
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 880px) {
   html {
-    background-color: rgb(21, 255, 0);
     font-size: 11px;
   }
 }
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 280px) {
   html {
-    font-size: 11px;
+    font-size: 9px;
   }
 }

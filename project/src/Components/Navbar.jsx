@@ -15,13 +15,16 @@ const Navbar = () => {
         <span>Categories</span>
         <span>Website Builders</span>
         <span>Today's deals</span>
+        <div className="mobile-respons">
         <i className={show ? "bi bi-x-lg" : "bi bi-list"} onClick={()=>setShow(!show)}></i>
-      </nav>
-      <div className="mobile-list" style={show ? {opacity:"1"} : {opacity:"0"}}>
+        <div className="mobile-list" style={show ? {opacity:"1"} : {opacity:"0"}}>
         <div>Categories</div>
         <div>Website Builders</div>
         <div>Today's deals</div>
       </div>
+        </div>
+      </nav>
+      
     </div>
   );
 };

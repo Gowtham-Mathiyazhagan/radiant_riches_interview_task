@@ -3,7 +3,6 @@
   width: 100%;
   background-color: #212731;
   color: #d1d6da;
-  position: relative;
 }
 .nav-container nav {
   height: 100%;
@@ -45,19 +44,25 @@
   border: none;
   background-color: transparent;
 }
-.bi-list,
+/* ******
+mobile responsive element
+****** */
+.nav-container nav .mobile-respons {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.nav-container nav .mobile-respons .bi-list,
 .bi-x-lg {
   display: none;
   font-size: 20px;
   cursor: pointer;
   -webkit-text-stroke: 1px;
-  /* width: 30px;
-  height: 20px; */
 }
-.nav-container .mobile-list {
+.nav-container nav .mobile-respons .mobile-list {
   position: absolute;
-  /* top: 30px; */
-  right: 130px;
+  top: 32px;
+  right: -40px;
   height: 100px;
   width: 100px;
   background-color: rgb(0, 0, 0, 0.7);
@@ -73,30 +78,20 @@
 .nav-container .mobile-list div {
   cursor: pointer;
 }
+
 @media only screen and (max-width: 750px) {
   .nav-container nav > span {
     display: none;
   }
-  .nav-container .mobile-list {
+  .nav-container nav .mobile-respons .mobile-list {
     display: flex !important;
   }
   .nav-container nav {
     justify-content: space-evenly;
   }
-  .bi-list,
-  .bi-x-lg {
-    display: block;
-  }
+  .nav-container nav .mobile-respons .bi-list,
+.bi-x-lg {
+  display: block;
 }
-@media only screen and (max-width: 610px) {
-  .nav-container .mobile-list {
-    position: absolute;
-    right: 20px;
-  }
-  @media only screen and (max-width: 880px) {
-    .nav-container .mobile-list {
-      position: absolute;
-      right: 20px;
-    }
-  }
 }
+
