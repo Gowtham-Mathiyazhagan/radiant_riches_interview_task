@@ -3,12 +3,15 @@
 }
 
 .contant-container .item {
-  min-height: 16rem;
+  min-height: 20rem;
   width: 100%;
   display: grid;
   font-size: 0.9rem;
   grid-template-columns: 25% 1fr 25%;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
+}
+.contant-container .item:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 /* 
 *******
@@ -21,11 +24,7 @@ left-item
   align-items: center;
   justify-content: space-evenly;
 }
-.contant-container .item .left-item .no {
-  color: #626e79;
-  font-size: 1.1rem;
-  align-self: flex-start;
-}
+
 .contant-container .item .left-item .label {
   height: 2.125rem;
   width: 8.5rem;
@@ -37,14 +36,28 @@ left-item
   color: #ffffff;
   align-self: flex-start;
 }
+.no-and-img {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  width: 100%;
+}
+.contant-container .item .left-item .no {
+  color: #626e79;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
 .contant-container .item .left-item img {
   height: 6.4375rem;
   width: 8.8125rem;
+  align-self: center;
 }
 .contant-container .item .left-item h6 {
   color: #4b5665;
   font-size: 0.875rem;
   text-align: center;
+  padding-top: 20px;
 }
 /* 
 *******
@@ -57,21 +70,23 @@ mid-item
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .contant-container .item .mid-item .about {
+  padding-bottom: 20px;
 }
 .contant-container .item .mid-item .about span {
   font-weight: 700;
 }
 .contant-container .item .mid-item h5 {
   font-size: 0.9rem;
+  padding-bottom: 20px;
 }
 .contant-container .item .mid-item p {
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .contant-container .item .mid-item .see-more {
-  /* font-size: 0.9rem; */
   color: #1b88f4;
   cursor: pointer;
   width: 100px;
@@ -89,7 +104,7 @@ right-item
 .contant-container .item .right-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .contant-container .item .right-item .rating-card {
@@ -104,7 +119,7 @@ right-item
 }
 .contant-container .item .right-item .rating-card .no {
   color: #074786;
-  font-size: 1.7rem;
+  font-size: 1.7rem !important;
   font-size: 0.8125rem;
 }
 .contant-container .item .right-item .rating-card p {
@@ -114,7 +129,7 @@ right-item
 .contant-container .item .right-item button {
   color: #ffffff;
   height: 3rem;
-  width: 14rem;
+  width: 12rem;
   padding: 10px 8px;
   background-color: #1b88f4;
   border: none;
@@ -133,7 +148,7 @@ CDK Resposive Builde
 *******
 */
 .contant-container .item .mid-item.cdk {
-  min-height: 24rem;
+  height: 30rem;
 }
 .contant-container .item .mid-item.cdk .cdk-details {
   display: none;
