@@ -4,6 +4,7 @@ import Headsection from "./Components/Headsection";
 import Contant from "./Components/Contant";
 import ContantTwo from "./Components/ContantTwo";
 import SignUp from "./Components/SignUp";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <Contant />
         <ContantTwo />
         <SignUp />
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   );
