@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-html{
+html {
   font-size: 16px;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -14,4 +14,23 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1060px) {
+  html {
+    /* background-color: aqua; */
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  html {
+    /* background-color: rgb(225, 255, 0); */
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  html {
+    /* background-color: rgb(21, 255, 0); */
+    font-size: 11px;
+  }
 }

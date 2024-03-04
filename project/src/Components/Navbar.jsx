@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 const Navbar = () => {
+  const [show, setShow] = useState(false);
   return (
     //Main container to wrap the elemets
     <div className="nav-container">
@@ -9,12 +10,18 @@ const Navbar = () => {
           <button>
             <i className="bi bi-search"></i>
           </button>
-          <input type="text" onClick={() => setIcon(false)} />
+          <input type="text" />
         </div>
         <span>Categories</span>
         <span>Website Builders</span>
         <span>Today's deals</span>
+        <i className={show ? "bi bi-x-lg" : "bi bi-list"} onClick={()=>setShow(!show)}></i>
       </nav>
+      <div className="mobile-list" style={show ? {opacity:"1"} : {opacity:"0"}}>
+        <div>Categories</div>
+        <div>Website Builders</div>
+        <div>Today's deals</div>
+      </div>
     </div>
   );
 };
