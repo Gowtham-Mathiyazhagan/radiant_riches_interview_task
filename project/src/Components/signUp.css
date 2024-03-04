@@ -1,0 +1,42 @@
+.signup-component {
+  height: 11rem;
+  width: 64rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-component h4 {
+  font-size: 2rem;
+  color: #5c6874;
+  font-weight: 400;
+}
+.signup-component .input {
+  height: 3.5rem;
+  width: 22rem;
+}
+.signup-component .input input {
+  height: 100%;
+  width: 70%;
+  outline: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 1px solid #5c6874;
+  padding-left: 10px;
+  border-right: none;
+}
+
+.signup-component .input button {
+  height: 100%;
+  width: 30%;
+  background-color: #1b88f4;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in;
+}
+.signup-component .input button:hover {
+  transform: scale(1.1);
+}
