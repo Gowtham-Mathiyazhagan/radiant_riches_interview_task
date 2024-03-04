@@ -40,3 +40,12 @@
 .signup-component .input button:hover {
   transform: scale(1.1);
 }
+
+@media only screen and (max-width: 610px) {
+  .signup-component {
+    width: 30rem;
+  }
+  .signup-component h4 {
+    font-size: 1.5rem;
+  }
+}
