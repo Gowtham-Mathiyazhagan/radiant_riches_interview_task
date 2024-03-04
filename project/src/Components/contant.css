@@ -1,5 +1,6 @@
 .contant-container {
   width: 64rem;
+  margin-bottom: 30px;
 }
 
 .contant-container .item {
@@ -58,6 +59,7 @@ left-item
   font-size: 0.875rem;
   text-align: center;
   padding-top: 20px;
+  font-weight: 400;
 }
 /* 
 *******
